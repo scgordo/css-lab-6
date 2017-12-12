@@ -1,0 +1,86 @@
+/* mobile layout (479 pixels or less) */
+/* default styles go here */
+  body {
+    background-color: red;
+    color: black;
+    font-family: Verdana;
+    text-align: center;
+  }
+  ul {
+    list-style: none;
+  }
+
+
+/* mobile landscape layout (480px to 767px) */
+@media only screen and (min-width: 480px) {
+  body {
+    background-color: black;
+    color: orange;
+    font-family: Verdana;
+    text-align: center;
+  }
+  li {
+    list-style: none;
+  }
+  section article {
+    width: 100%;
+    text-align: center;
+  }
+  section h2 {
+    text-align: center;
+  }
+}
+/* tablet portrait layout (768px to 959px) */
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: purple;
+    color: black;
+    font-family: Verdana;
+    text-align: left
+  }
+  section article {
+    width: 40%;
+    float: left;
+    text-align: center;
+    border: 1px solid orange;
+    margin: 0 1% 1% 1%;
+    background-color: red;
+  }
+  
+  section article p {
+    margin: 0 3%;
+    text-align: left;
+  }
+  
+}
+/* tablet landscape and desktop layout (960px and up) */
+@media only screen and (min-width: 960px) {
+
+  body {
+  background-color: orange;
+  color: black;
+  font-family: Verdana;
+  margin: 0 5%;
+}
+
+ h1, p, ul{
+    width: 90%;
+    float: right;
+    text-align: right;
+  }
+  
+section article {
+  width: 30%;
+  float: right;
+  border: 1px solid black;
+  background-color: white;
+}
+  
+  section h2 {
+    clear: both;
+  }
+
+  section article h3 {
+    text-align: center;
+  }
+}
